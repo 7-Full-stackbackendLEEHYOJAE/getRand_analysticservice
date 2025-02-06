@@ -13,5 +13,5 @@ FROM openjdk:17-alpine
 WORKDIR /myapp
 
 COPY --from=build /myapp/build/libs/*.jar /myapp/getRand_analysticservice.jar
-EXPOSE 5002
+EXPOSE 5004
 ENTRYPOINT ["java","-jar","/basic_test.jar"]
